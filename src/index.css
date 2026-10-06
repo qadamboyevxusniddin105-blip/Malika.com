@@ -1,0 +1,56 @@
+@import "tailwindcss";
+
+@layer utilities {
+  @keyframes floatUp {
+    0% {
+      transform: translateY(100vh) scale(0.6) rotate(0deg);
+      opacity: 0;
+    }
+    15% {
+      opacity: 0.7;
+    }
+    90% {
+      opacity: 0.7;
+    }
+    100% {
+      transform: translateY(-20vh) scale(1.2) rotate(360deg);
+      opacity: 0;
+    }
+  }
+
+  @keyframes pulseGlow {
+    0%, 100% {
+      box-shadow: 0 0 25px -5px rgba(244, 63, 94, 0.45);
+    }
+    50% {
+      box-shadow: 0 0 45px 5px rgba(244, 63, 94, 0.7);
+    }
+  }
+
+  @keyframes wiggle {
+    0%, 100% { transform: rotate(0deg); }
+    25% { transform: rotate(-8deg); }
+    75% { transform: rotate(8deg); }
+  }
+
+  @keyframes gentleBounce {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-8px); }
+  }
+}
+
+.animate-float-up {
+  animation: floatUp linear infinite;
+}
+
+.animate-pulse-glow {
+  animation: pulseGlow 2.5s ease-in-out infinite;
+}
+
+.animate-wiggle {
+  animation: wiggle 0.4s ease-in-out;
+}
+
+.animate-gentle-bounce {
+  animation: gentleBounce 2.5s ease-in-out infinite;
+}

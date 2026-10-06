@@ -1,0 +1,6 @@
+{
+  "name": "Will You Be Mine? 🐾💕",
+  "description": "An interactive, playful and romantic 'Will you be mine?' single page app with cute cats, growing Yes button, and heart confetti.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
